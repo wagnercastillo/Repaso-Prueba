@@ -1,0 +1,140 @@
+body{
+    font-family: 'sans-serif', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:  #252422;
+    
+}
+h3{
+    color: #fefae0;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+} 
+
+h5{
+    color: #a7cdbd;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-align: right;
+}
+.container{
+    display: block;
+    height: 100vh;
+    
+    width: 100%;
+    background-color: #252422;
+    position: absolute;
+    margin: -8px;
+}
+.telefono{
+    height: 520px;
+    width: 270px;
+    background-color: #403d39;
+    border-radius: 5%;
+    display: flex;
+}
+.container, .telefono{
+    display: grid;
+    flex-grow: 30px;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#Phones{
+    display: flex;
+    flex-direction: inherit;
+    gap: 40px;
+}
+
+.pantalla{
+    background-color: white;
+    height: 400px;
+    width: 260px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    transition-duration: .25s;
+    z-index: 0;
+}
+.parlante{
+    height: 5px;
+    width: 50px;
+    border-radius: 25%;
+    margin-top: 10px;
+}
+.home{
+    height: 20px;
+    width: 55px;
+    border-radius: 20%;
+}
+.parlante, .home{
+    display: flex;
+    background-color: #1C2833;
+}
+.numero{
+    display: flex;
+    height: 50px;
+}
+.teclado{
+    height: 250px;
+    width: 250px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.tecla, .accion, .delete{
+    height: 55px;
+    width:  55px;
+    font-size: 25px;
+    border-radius: 50px;
+    border:none;
+}
+.tecla:active,.accion:active, .delete:active{
+    background-color: gray;
+}
+.acciones{
+    display: flex;
+    height: 50px;
+    width: 250px;
+    padding-left: 20px;
+    padding-right: 20px;
+    flex-direction: row;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.accion{
+    background-color: #6a994e;
+    align-self: center;
+    z-index: 2;
+}
+#tel{
+    display: flex;
+    font-size: 25px;
+    width: 200px;
+    text-align: center;
+    border: none;
+}
+.delete{
+    background-color: white;
+}
+#llamando{
+    margin-top: 90px;
+    position: absolute;
+    background-color: rgb(158, 158, 158);
+    width: 260px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+}
