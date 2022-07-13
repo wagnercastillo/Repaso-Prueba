@@ -1,0 +1,1 @@
+-record (tableOpcion, {opcion}).
