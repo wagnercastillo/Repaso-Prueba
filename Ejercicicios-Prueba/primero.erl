@@ -43,8 +43,7 @@ clienteJson(SessionID, _Env, _Input) ->
 	A = ordenar(Ar),
 	io:format("arreglo: ~p~n",[A]),
     io:format("Data: ~p~n", [_Input]),
-    %io:format("Data1: ~p~n", [_Env]),
-	%Out = [integer_to_list(X)|| X<-A],
+
 	B = "["++lists:concat(lists:join(",",A))++"]",
     Str1 = "{\"Respuesta\":\"",
     Str2 = concat(B,"\"}"),
